@@ -24,7 +24,7 @@ form.addEventListener('submit',(e)=>{
 
 
 
-const name="Alo";
+const name="Alo"; 								//senders_ID
 socket.emit('new-user-joined',name);
 
 

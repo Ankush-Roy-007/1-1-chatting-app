@@ -8,15 +8,15 @@ const server=http.createServer(app);
 server.listen(PORT,()=>{
 	console.log("started")
 })
-mongoose.connect("mongodb+srv://AnKuSh-07:qwerasd1234@cluster0.ux1dt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("Use your mongodb URL",{ useNewUrlParser: true, useUnifiedTopology: true });
 const chatSchema=new mongoose.Schema({
 	name:String,
 	message:String,
 	sendersid:String,
 	receiversid:String
 })
-var s="Alo";
-var g="Ankus";
+var s="Alo";					//senders_ID
+var g="Ankus";					//Receivers_ID 
 const entry=new mongoose.model("collection",chatSchema);
 
 // app.get("/",(req,res)=>{
