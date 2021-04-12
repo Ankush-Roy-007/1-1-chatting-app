@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="chattotaldiv">
+		<div class="container"  id="container">
+			 <div class="message left">
+				<div class="othersname">
+					Hayy:
+				</div>
+				how are you
+			</div>
+			<div class="message right">
+				<div class="youname">
+				You
+			</div>
+			I am ankush
+		</div> 
+			
+	
+	
+		</div>
+    <script>
+         const messageContainer=document.querySelector('.container');
+	const messageElement=document.createElement('div');	
+	const messageElementa=document.createElement('div');	
+	messageElementa.innerText="you :";
+	messageElementa.classList.add("youname");
+	
+	messageElement.innerText="hello ankush";
+    
+	messageElement.appendChild(messageElementa)
+	messageElement.classList.add('message');
+	messageElement.classList.add("right");
+	
+;
+	messageContainer.append(messageElement);
+
+    </script>
+</body>
+</html>
